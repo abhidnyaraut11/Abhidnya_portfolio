@@ -163,7 +163,7 @@
     <div class="ws-item reveal">
       <span class="ws-num">E02</span>
       <div class="ws-body">
-        <h3>Bachelor of Engineering in Computer Engineering</h3>
+        <h3>Bachelor of Engineering</h3>
         <p>Vidyavardhini's College of Engineering &amp; Technology</p>
         <div class="tags" style="margin-top:10px">
           <span class="tag to">Electronics and Telecommunication</span>
@@ -184,7 +184,7 @@
         Open to roles in data engineering, cloud infrastructure &amp; analytics.<br>Feel free to reach out anytime.
       </p>
       <div class="contact-btns">
-        <a href="/cdn-cgi/l/email-protection#5332313b3a373d2a32213226276262626113343e323a3f7d303c3e" class="btn-primary">Email me</a>
+        <a href="mailto:abhidnyaraut1112@gmail.com" class="btn-primary">Email me</a>
         <a href="https://www.linkedin.com/in/abhidnyaraut/" target="_blank" rel="noreferrer" class="btn-ghost">LinkedIn</a>
         <a href="https://abhidnyaraut11.github.io/Abhidnya_portfolio/#projects" target="_blank" rel="noreferrer" class="btn-ghost">GitHub</a>
       </div>
@@ -200,7 +200,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const ham = document.getElementById('ham');
@@ -213,4 +213,10 @@ ham.addEventListener('click', () => {
 
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible
+    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
