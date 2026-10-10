@@ -22,9 +22,9 @@
     <a href="/" class="logo">abhidnya.</a>
     <div class="nav-links" id="navLinks">
       <a href="#projects">Projects</a>
-      <a href="#workshops">Workshops</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
       <a href="#education">Education</a>
-      <a href="#education">Work Experience</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </div>
     <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">
@@ -42,11 +42,13 @@
       Open to opportunities
     </div>
     <h1 class="title">
-      My Projects and workshops<br>
+      Building intelligent systems<br>
+      with <span class="grad-text">Data, Cloud &amp; AI.</span>
     </h1>
     <p class="hero-desc">
-      MS Information Technology &amp; Management at UT Dallas<br>
-      Specializing in Cloud Infrastructure, Applied Machine Learning, Data Engineering &amp; Analytics.
+      MS Information Technology &amp; Management candidate (Dec 2026) at UT Dallas with 6 years of
+      enterprise infrastructure experience across pharmaceutical and banking domains — now building
+      across data engineering, AWS cloud, and applied machine learning. Based in Dallas, TX.
     </p>
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View my work</a>
@@ -55,12 +57,13 @@
     <div class="skill-row">
       <span class="skill">Python</span>
       <span class="skill">SQL</span>
-      <span class="skill">Linux</span>
       <span class="skill">AWS</span>
+      <span class="skill">Linux</span>
       <span class="skill">ETL</span>
-      <span class="skill">Tableau</span>
-      <span class="skill">Data Modeling</span>
-          </div>
+      <span class="skill">Spark</span>
+      <span class="skill">Power BI</span>
+      <span class="skill">Git</span>
+    </div>
   </div>
 
   <!-- PROJECTS -->
@@ -70,134 +73,285 @@
     <div class="grid">
 
       <article class="card c-teal reveal">
-        <div class="card-icon ic-g">⚙️</div>
+        <div class="card-icon ic-g">🤖</div>
         <div class="card-top"><span class="card-num">01</span></div>
-        <h3>Contact Management System</h3>
-        <p>Designed and normalized a relational database system using SQL to centralize contact data and automate reminders via triggers and stored procedures.
-Improved data organization and query efficiency through schema optimization and relational integrity constraints.</p>
+        <h3>Loan Approval Prediction Engine</h3>
+        <p>Built an end-to-end loan approval classification pipeline in Python, benchmarking 5 ML models
+        and achieving 93.77% accuracy with LightGBM. Handled class imbalance with SMOTE and used
+        feature importance to uncover key credit risk drivers.</p>
         <div class="tags">
-          <span class="tag tg">MySQL</span><span class="tag tg">Stored Procedures/Functions</span><span class="tag tg">Triggers</span>
-        </div>
-      </article>
-
-      <article class="card c-teal reveal">
-        <div class="card-icon ic-g">⚙️</div>
-        <div class="card-top"><span class="card-num">02</span></div>
-        <h3>Data Engineering Project</h3>
-        <p>End-to-end ETL workflow — cleaning, transforming, and building multi-step data pipelines.</p>
-        <div class="tags">
-          <span class="tag tg">Python</span><span class="tag tg">ETL</span><span class="tag tg">Data Engineering</span>
-        </div>
-        <div class="card-links">
-          <a href="./assets/notebooks/DE_project1.html" target="_blank" rel="noreferrer" class="link">View Notebook ↗</a>
-          <a href="PASTE_GITHUB_LINK_HERE" target="_blank" rel="noreferrer" class="link dim">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="card c-orange reveal">
-        <div class="card-icon ic-o">⚙️</div>
-        <div class="card-top"><span class="card-num">03</span></div>
-        <h3>Fleet Risk Factor Analysis</h3>
-        <p>Developed a full big data analytics pipeline to identify high-risk commercial truck drivers for Az National Trucking (ANT) using Cloudera's Hadoop ecosystem. Processed 8,000+ GPS telemetry records through Apache Hive and PIG to compute driver risk scores, connected live data to Power BI via Impala for interactive dashboards, and built a predictive model in Python to forecast future high-risk drivers, enabling proactive safety interventions before accidents occur.</p>
-        <div class="tags">
-          <span class="tag to">Big Data</span><span class="tag to">Apache Hive</span><span class="tag to">Impala</span>
-        </div>
-        <div class="card-links">
-          <a href="./BigData Fleet Risk Dashboard.pdf" target="_blank" rel="noreferrer" class="link">Results ↗</a>
-        </div>
-      </article>
-
-<article class="card c-orange reveal">
-        <div class="card-icon ic-o">⚙️</div>
-        <div class="card-top"><span class="card-num">04</span></div>
-        <h3>Loan Approval Prediction</h3>
-        <p>Built a machine learning pipeline to predict loan approval outcomes, benchmarking 5 models on 45,000 applications and achieving 93.74% accuracy with LightGBM using SMOTE for class imbalance and feature importance analysis to identify key credit risk drivers.</p>
-        <div class="tags">
-          <span class="tag to">Machine Learning</span><span class="tag to">Supervised</span>
+          <span class="tag tg">Python</span><span class="tag tg">scikit-learn</span><span class="tag tg">LightGBM</span><span class="tag tg">SMOTE</span>
         </div>
         <div class="card-links">
           <a href="./Loan_Approval_Prediction_Final.html" target="_blank" rel="noreferrer" class="link">Results ↗</a>
         </div>
       </article>
 
+      <article class="card c-orange reveal">
+        <div class="card-icon ic-o">📊</div>
+        <div class="card-top"><span class="card-num">02</span></div>
+        <h3>Fleet Safety Risk Analytics</h3>
+        <p>Built an end-to-end big data pipeline (Hadoop, Hive, Impala, Pig) analyzing 8,000+ GPS
+        telemetry records across 25 drivers and 20 trucks — computing driver risk scores that flagged
+        7 high-risk drivers. Power BI dashboards plus Python predictive modeling for proactive safety
+        interventions.</p>
+        <div class="tags">
+          <span class="tag to">Hadoop</span><span class="tag to">Hive</span><span class="tag to">Impala</span><span class="tag to">Power BI</span>
+        </div>
+        <div class="card-links">
+          <a href="./BigData Fleet Risk Dashboard.pdf" target="_blank" rel="noreferrer" class="link">Results ↗</a>
+        </div>
+      </article>
+
+      <article class="card c-pink reveal">
+        <div class="card-icon ic-pk">☁️</div>
+        <div class="card-top"><span class="card-num">03</span></div>
+        <h3>AWS AI Campus Assistant</h3>
+        <p>Architected and deployed a serverless AI assistant on AWS — S3, API Gateway, Lambda, and
+        Amazon Bedrock — routing real-time NLP queries across 3 campus domains with under 1.5s average
+        latency across 200+ validated test queries.</p>
+        <div class="tags">
+          <span class="tag tpk">AWS Lambda</span><span class="tag tpk">API Gateway</span><span class="tag tpk">Amazon Bedrock</span><span class="tag tpk">S3</span>
+        </div>
+      </article>
+
+      <article class="card c-yellow reveal">
+        <div class="card-icon ic-y">⚙️</div>
+        <div class="card-top"><span class="card-num">04</span></div>
+        <h3>End-to-End Data Engineering Pipeline</h3>
+        <p>Built an end-to-end ETL pipeline in Python (pandas) and SQL processing 50K+ records across
+        8 relational tables — schema-validated models, transaction-safe loads, and SQL test harnesses
+        for data integrity validation.</p>
+        <div class="tags">
+          <span class="tag ty">Python</span><span class="tag ty">SQL</span><span class="tag ty">ETL</span><span class="tag ty">Data Modeling</span>
+        </div>
+      </article>
+
+      <article class="card c-teal reveal">
+        <div class="card-icon ic-g">🗄️</div>
+        <div class="card-top"><span class="card-num">05</span></div>
+        <h3>Contact Management System</h3>
+        <p>Designed and normalized a relational database system using SQL to centralize contact data and
+        automate reminders via triggers and stored procedures. Improved data organization and query
+        efficiency through schema optimization and relational integrity constraints.</p>
+        <div class="tags">
+          <span class="tag tg">MySQL</span><span class="tag tg">Stored Procedures</span><span class="tag tg">Triggers</span>
+        </div>
+      </article>
+
+      <article class="card c-orange reveal">
+        <div class="card-icon ic-o">⚙️</div>
+        <div class="card-top"><span class="card-num">06</span></div>
+        <h3>Data Engineering Project</h3>
+        <p>End-to-end ETL workflow — cleaning, transforming, and building multi-step data pipelines,
+        including data modeling exercises and notebook-based pipeline development.</p>
+        <div class="tags">
+          <span class="tag to">Python</span><span class="tag to">ETL</span><span class="tag to">Data Engineering</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/abhidnyaraut11/Abhidnya_portfolio/blob/main/DE_Project_notebooks/DE_project1.ipynb" target="_blank" rel="noreferrer" class="link">View Notebook ↗</a>
+          <a href="https://github.com/abhidnyaraut11" target="_blank" rel="noreferrer" class="link dim">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="card c-yellow reveal">
+        <div class="card-icon ic-y">💬</div>
+        <div class="card-top"><span class="card-num">07</span></div>
+        <h3>AI-powered Interview Coach</h3>
+        <p>An intelligent interview coach that simulates real interview scenarios, analyzes responses,
+        and provides structured feedback to improve answers.</p>
+        <div class="tags">
+          <span class="tag ty">Kiro AI IDE</span><span class="tag ty">Amazon Bedrock</span><span class="tag ty">Amazon Transcribe</span>
+        </div>
+      </article>
 
     </div>
   </section>
 
-  <!-- WORKSHOPS -->
-  <section id="workshops" class="section container">
-    <div class="sec-label">02 / Workshops</div>
-    <h2 class="sec-title">Workshops &amp; Learning</h2>
-    <p class="sec-sub">Hands-on programs and structured learning experiences.</p>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <div class="sec-label">02 / Experience</div>
+    <h2 class="sec-title">Work Experience</h2>
+    <p class="sec-sub">6 years of enterprise infrastructure, middleware, and platform operations.</p>
     <div class="ws-list">
       <div class="ws-item reveal">
-        <span class="ws-num">W01</span>
+        <span class="ws-num">X01</span>
         <div class="ws-body">
-          <h3>AI powered - UTD AWS AI assistant</h3>
-          <p>Built and deployed an AI-powered campus assistant using AWS services (S3, API Gateway, Lambda, and Amazon Bedrock) to deliver real-time responses on campus dining, events, and parking.</p>
-          <div class="tags" style="margin-top:10px"><span class="tag tp">Amazon Bedrock</span><span class="tag tg">API Gateway</span><span class="tag tg">Lambda</span></div>
+          <h3>Data Governance Analyst — CyberO2</h3>
+          <p>Building a Data Flow Register prototype for a DPDPA/GDPR privacy compliance platform —
+          15-field processing activity schema, automated source-to-storage data flow mapping, and
+          regulation-aware rule checks.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag tp">Data Governance</span><span class="tag tg">GDPR</span><span class="tag tg">Data Modeling</span></div>
+        </div>
+        <span class="ws-year">2026 – Present</span>
+      </div>
+      <div class="ws-item reveal">
+        <span class="ws-num">X02</span>
+        <div class="ws-body">
+          <h3>Teaching Assistant — UT Dallas</h3>
+          <p>Supported grading for Database Foundations for Analytics, Database Systems, and Big Data courses.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag tg">SQL</span><span class="tag tg">Databases</span><span class="tag tg">Big Data</span></div>
+        </div>
+        <span class="ws-year">2025 – 2026</span>
+      </div>
+      <div class="ws-item reveal">
+        <span class="ws-num">X03</span>
+        <div class="ws-body">
+          <h3>Infrastructure Specialist — IBM</h3>
+          <p>Administered HCL Digital Experience CMS for a large-scale banking platform across 30+ modules;
+          coordinated UAT-to-production releases with zero SLA breaches. Managed user lifecycle and
+          role-based access control on WebSphere.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag to">WebSphere</span><span class="tag to">HCL DX</span><span class="tag to">RBAC</span></div>
+        </div>
+        <span class="ws-year">2023 – 2024</span>
+      </div>
+      <div class="ws-item reveal">
+        <span class="ws-num">X04</span>
+        <div class="ws-body">
+          <h3>Technology Analyst — Infosys</h3>
+          <p>Primary escalation engineer for 100+ enterprise applications on RHEL for a global pharmaceutical
+          client. Managed WebLogic/WebSphere/JBoss middleware stacks — deployments, SSL renewals, and
+          incident runbooks across global time zones.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag ty">Linux</span><span class="tag ty">Middleware</span><span class="tag ty">Production Support</span></div>
+        </div>
+        <span class="ws-year">2018 – 2023</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <div class="sec-label">03 / Skills</div>
+    <h2 class="sec-title">Technical Skills</h2>
+    <div class="grid" style="margin-top:28px">
+      <article class="card reveal">
+        <h3>Languages</h3>
+        <div class="tags"><span class="tag tg">Python</span><span class="tag tg">SQL</span><span class="tag tg">Bash</span></div>
+      </article>
+      <article class="card reveal">
+        <h3>Cloud</h3>
+        <div class="tags"><span class="tag tp">AWS</span><span class="tag tp">S3</span><span class="tag tp">Lambda</span><span class="tag tp">Bedrock</span><span class="tag tp">IAM</span><span class="tag tp">Azure</span></div>
+      </article>
+      <article class="card reveal">
+        <h3>Data Engineering</h3>
+        <div class="tags"><span class="tag to">Spark</span><span class="tag to">Hadoop</span><span class="tag to">Hive</span><span class="tag to">ETL</span><span class="tag to">Data Warehousing</span></div>
+      </article>
+      <article class="card reveal">
+        <h3>AI / ML</h3>
+        <div class="tags"><span class="tag tpk">scikit-learn</span><span class="tag tpk">LightGBM</span><span class="tag tpk">XGBoost</span><span class="tag tpk">NLP</span><span class="tag tpk">RAG</span><span class="tag tpk">LLMs</span></div>
+      </article>
+      <article class="card reveal">
+        <h3>Infrastructure</h3>
+        <div class="tags"><span class="tag ty">Linux (RHCSA)</span><span class="tag ty">WebLogic</span><span class="tag ty">WebSphere</span><span class="tag ty">TCP/IP</span><span class="tag ty">DNS</span></div>
+      </article>
+      <article class="card reveal">
+        <h3>Tools</h3>
+        <div class="tags"><span class="tag">Git</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">JIRA</span><span class="tag">MongoDB</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section container">
+    <div class="sec-label">04 / Certifications</div>
+    <h2 class="sec-title">Certifications</h2>
+    <div class="ws-list">
+      <div class="ws-item reveal">
+        <span class="ws-num">C01</span>
+        <div class="ws-body">
+          <h3>AWS Certified Solutions Architect – Associate (SAA-C03)</h3>
+          <p>Amazon Web Services — validates designing secure, resilient, and cost-optimized architectures on AWS.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag tp">AWS</span><span class="tag tg">Cloud Architecture</span></div>
         </div>
         <span class="ws-year">2026</span>
       </div>
       <div class="ws-item reveal">
-        <span class="ws-num">W02</span>
+        <span class="ws-num">C02</span>
         <div class="ws-body">
-          <h3>AI-powered Interview Coach</h3>
-          <p>An intelligent interview coach that simulates real interview scenarios, analyzes responses, and provides structured feedback to improve answers.</p>
-          <div class="tags" style="margin-top:10px"><span class="tag to">Kiro AI IDE</span><span class="tag to">Amazon Bedrock</span><span class="tag to">Amazon Transcribe</span></div>
+          <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+          <p>Microsoft — foundational knowledge of cloud concepts and Azure services.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag tp">Azure</span><span class="tag tg">Cloud Fundamentals</span></div>
         </div>
-        <span class="ws-year">2026</span>
+        <span class="ws-year">2025</span>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-<section id="education" class="section container">
-  <div class="sec-label">03 / Education</div>
-  <h2 class="sec-title">Education</h2>
-  <div class="ws-list">
+  <section id="education" class="section container">
+    <div class="sec-label">05 / Education</div>
+    <h2 class="sec-title">Education</h2>
+    <div class="ws-list">
 
-    <div class="ws-item reveal">
-      <span class="ws-num">E01</span>
-      <div class="ws-body">
-        <h3>Master of Science in Information Technology and Management</h3>
-        <p>The University of Texas at Dallas</p>
-        <div class="tags" style="margin-top:10px">
-	  <span class="tag tg">Machine Learning</span>
-          <span class="tag tp">Cloud Computing</span>
-          <span class="tag tg">Data Engineering</span>
+      <div class="ws-item reveal">
+        <span class="ws-num">E01</span>
+        <div class="ws-body">
+          <h3>Master of Science in Information Technology and Management</h3>
+          <p>The University of Texas at Dallas — GPA 3.58</p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag tg">Machine Learning</span>
+            <span class="tag tp">Cloud Computing</span>
+            <span class="tag tg">Data Engineering</span>
+          </div>
         </div>
+        <span class="ws-year">Dec 2026</span>
       </div>
-      <span class="ws-year">2025–2026</span>
-    </div>
 
-    <div class="ws-item reveal">
-      <span class="ws-num">E02</span>
-      <div class="ws-body">
-        <h3>Bachelor of Engineering</h3>
-        <p>Vidyavardhini's College of Engineering &amp; Technology</p>
-        <div class="tags" style="margin-top:10px">
-          <span class="tag to">Electronics and Telecommunication</span>
+      <div class="ws-item reveal">
+        <span class="ws-num">E02</span>
+        <div class="ws-body">
+          <h3>Bachelor of Engineering, Electronics and Telecommunication</h3>
+          <p>University of Mumbai — GPA 7.08</p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag to">Engineering</span>
+          </div>
         </div>
+        <span class="ws-year">2018</span>
       </div>
-      <span class="ws-year">2014–2018</span>
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership" class="section container">
+    <div class="sec-label">06 / Leadership</div>
+    <h2 class="sec-title">Leadership &amp; Activities</h2>
+    <div class="ws-list">
+      <div class="ws-item reveal">
+        <span class="ws-num">L01</span>
+        <div class="ws-body">
+          <h3>Technology Officer — AWS Cloud Club, UT Dallas</h3>
+          <p>Set up and troubleshoot AWS accounts, labs, and demos for workshops; guide members through
+          hands-on AWS exercises and coordinate with AWS representatives on technical requirements.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag tp">AWS</span><span class="tag tg">Community</span></div>
+        </div>
+        <span class="ws-year">2026</span>
+      </div>
+      <div class="ws-item reveal">
+        <span class="ws-num">L02</span>
+        <div class="ws-body">
+          <h3>Volunteer — Trusted World</h3>
+          <p>Volunteered in community drives including clothes sorting and food packing.</p>
+          <div class="tags" style="margin-top:10px"><span class="tag ty">Community</span></div>
+        </div>
+        <span class="ws-year">2025</span>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section container">
     <div class="contact-box">
-      <div class="sec-label" style="text-align:center;margin-bottom:14px">04 / Contact</div>
+      <div class="sec-label" style="text-align:center;margin-bottom:14px">07 / Contact</div>
       <h2 class="sec-title" style="text-align:center">Let's connect.</h2>
       <p class="sec-sub" style="text-align:center;margin-bottom:32px">
-        Open to roles in data engineering, cloud infrastructure &amp; analytics.<br>Feel free to reach out anytime.
+        Open to full-time roles in data engineering, cloud, and AI/ML — Texas, remote, or anywhere in the US.<br>
+        Dallas, TX · +1 (214) 899-7064
       </p>
       <div class="contact-btns">
-        <a href="mailto:abhidnyaraut1112@gmail.com" class="btn-primary">Email me</a>
+        <a href="mailto:dal518182@utdallas.edu" class="btn-primary">Email me</a>
         <a href="https://www.linkedin.com/in/abhidnyaraut/" target="_blank" rel="noreferrer" class="btn-ghost">LinkedIn</a>
-        <a href="https://abhidnyaraut11.github.io/Abhidnya_portfolio/#projects" target="_blank" rel="noreferrer" class="btn-ghost">GitHub</a>
+        <a href="https://github.com/abhidnyaraut11" target="_blank" rel="noreferrer" class="btn-ghost">GitHub</a>
       </div>
     </div>
   </section>
